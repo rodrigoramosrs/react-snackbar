@@ -20,7 +20,7 @@ class Demo extends Component {
   render() {
     return (
       <div>
-        <h1>react animated interaction Demo</h1>
+        <h1>React Snackbar Demo</h1>
         Click here to: <input type="button" value="Show" onClick={this.show} />
         <ReactSnackBar Icon={<span>🦄</span>} Show={this.state.Show}>
           Hello there, nice to meet you!
