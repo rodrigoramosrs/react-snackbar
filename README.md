@@ -4,7 +4,19 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe react-snackbar here.
+https://media.giphy.com/media/L2r3TB3IKSV3c2SVPq/giphy.gif
+
+# Installation
+
+Install from NPM: npm -i react-js-snackbar
+
+# Usage Example
+
+```
+<ReactSnackBar Icon={<span>🦄</span>} Show={this.state.Show}>
+        Hello there, nice to meet you!
+</ReactSnackBar>
+```
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
