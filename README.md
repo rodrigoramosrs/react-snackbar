@@ -1,8 +1,6 @@
 # react-snackbar
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
 ![](https://media.giphy.com/media/L2r3TB3IKSV3c2SVPq/giphy.gif)
 
