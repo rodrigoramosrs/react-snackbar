@@ -131,16 +131,19 @@ const DefaultText = styled.div`
   text-align: left;
   text-overflow: ellipsis;
 
-  display: table-cell;
   text-align: center;
   vertical-align: middle;
 `;
 
 const TextContainer = styled.div`
   transition: all 150ms linear;
-  display: table;
+  display: flex;
   height: 100%;
   position: relative;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 const ReactSnackBar = props => {
   return (
