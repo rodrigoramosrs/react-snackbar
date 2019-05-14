@@ -4,11 +4,12 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-https://media.giphy.com/media/L2r3TB3IKSV3c2SVPq/giphy.gif
+![](https://media.giphy.com/media/L2r3TB3IKSV3c2SVPq/giphy.gif)
+
 
 # Installation
 
-Install from NPM: npm -i react-js-snackbar
+NPM: npm -i react-js-snackbar
 
 # Usage Example
 
