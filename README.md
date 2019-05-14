@@ -1,4 +1,4 @@
-# react-snackbar
+# react-js-snackbar
 
 [![npm package][npm-badge]][npm]
 
