@@ -1,6 +1,6 @@
 {
   "name": "react-js-snackbar",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Animated snackbar build for React",
   "main": "lib/index.js",
   "module": "es/index.js",
