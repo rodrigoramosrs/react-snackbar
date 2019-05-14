@@ -7,7 +7,7 @@
 
 # Installation
 
-NPM: npm -i react-js-snackbar
+npm i react-js-snackbar
 
 # Usage Example
 
