@@ -3,7 +3,7 @@
 ![](https://media.giphy.com/media/L2r3TB3IKSV3c2SVPq/giphy.gif)
 
 
-# Installation
+# Install nuget package
 [![NuGet version](https://badge.fury.io/js/react-js-snackbar.svg)](https://www.npmjs.com/package/react-js-snackbar)
 ```
 npm i react-js-snackbar
