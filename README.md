@@ -6,11 +6,11 @@
 
 
 # Installation
-
+```
 npm i react-js-snackbar
+```
 
 # Usage Example
-
 ```
 import React, { Component } from "react";
 import ReactSnackBar from "react-js-snackbar";
