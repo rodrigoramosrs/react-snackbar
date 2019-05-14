@@ -13,9 +13,35 @@ Install from NPM: npm -i react-js-snackbar
 # Usage Example
 
 ```
-<ReactSnackBar Icon={<span>🦄</span>} Show={this.state.Show}>
-        Hello there, nice to meet you!
-</ReactSnackBar>
+import React, { Component } from "react";
+import ReactSnackBar from "react-js-snackbar";
+
+class Demo extends Component {
+  state = {
+    Show: false,
+    Showing: false
+  };
+
+  show = () => {
+    if (this.state.Showing) return;
+
+    this.setState({ Show: true, Showing: true });
+    setTimeout(() => {
+      this.setState({ Show: false, Showing: false });
+    }, 2000);
+  };
+  render() {
+    return (
+      <div>
+        <h1>React Snackbar Demo</h1>
+        Click here to: <input type="button" value="Show" onClick={this.show} />
+        <ReactSnackBar Icon={<span>🦄</span>} Show={this.state.Show}>
+          Hello there, nice to meet you!
+        </ReactSnackBar>
+      </div>
+    );
+  }
+}
 ```
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
