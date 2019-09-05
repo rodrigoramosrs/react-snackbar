@@ -33,7 +33,7 @@ const MainContainer = styled.div`
   ${props =>
     !props.Show &&
     css`
-      min-width: 350px;
+      min-width: ${props => props.minWidth}
     `};
 
   ${props =>
@@ -63,25 +63,25 @@ const MainContainer = styled.div`
     }
     to {
       opacity: 1;
-      min-width: 350px;
+      min-width: ${props => props.minWidth};
     }
   }
 
   @keyframes stay {
     from {
       opacity: 1;
-      min-width: 350px;
+      min-width: ${props => props.minWidth};
     }
     to {
       opacity: 1;
-      min-width: 350px;
+      min-width: ${props => props.minWidth};
     }
   }
 
   @keyframes shrink {
     from {
       opacity: 1;
-      min-width: 350px;
+      min-width: ${props => props.minWidth};
     }
     to {
       opacity: 1;
@@ -154,7 +154,7 @@ const ReactSnackBar = props => {
       unmountOnExit
     >
       {state => (
-        <MainContainer state={state} Show={props.Show}>
+        <MainContainer state={state} Show={props.Show} minWidth={props.minWidth}>
           <IconContainer>
             <DefaultIcon>{props.Icon}</DefaultIcon>
           </IconContainer>
@@ -170,6 +170,12 @@ const ReactSnackBar = props => {
 ReactSnackBar.propTypes = {
   children: PropTypes.any,
   Icon: PropTypes.any,
-  Show: PropTypes.bool
+  Show: PropTypes.bool,
+  minWidth: PropTypes.string,
 };
+
+ReactSnackBar.defaultProps = {
+  minWidth: '350px',
+}
+
 export default ReactSnackBar;
